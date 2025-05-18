@@ -1,7 +1,6 @@
-import { PrismaClient } from '@prisma/client';
-import { NextResponse } from 'next/server';
 
-const prisma = new PrismaClient();
+import { prisma } from "@/lib/prima";
+import { NextResponse } from "next/server";
 
 export async function GET(req) {
   const userId = req.nextUrl.pathname.split("/")[3];
@@ -19,7 +18,7 @@ export async function GET(req) {
     return NextResponse.json({ notifications }, { status: 200 });
   } catch (error) {
     console.error('Failed to fetch notifications:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to fetch notifications' }, { status: 500 });
   }
 }
 

@@ -41,4 +41,34 @@ To get started, clone the repository to your local machine:
 git clone https://github.com/DevanshBajpai09/PepSales-assignment.git
 cd Pepsales-assignment
 
+```
+
+### 2. Install Dependencies
+Run the following command to install all necessary dependencies:
+```bash 
+npm install
+```  
+### 3. Set Up Environment Variables
+Create a .env file in the root directory of the project and add the following environment variables:
+```bash 
+DATABASE_URL=<your_postgresql_url>
+RABBITMQ_URL=<your_rabbitmq_url>
+QUEUE_NAME=<your_queue_name>
+TWILIO_SID=<your_twilio_sid>
+TWILIO_AUTH_TOKEN=<your_twilio_auth_token>
+TWILIO_PHONE_NUMBER=<your_twilio_phone_number>
+RESEND_API_KEY=<your_resend_api_key>
+```
+
+### 4. Run the Application
+To start the application, use the following command:
+
+```bash 
+npm run dev
+```
+
+## API Dcumeetation
+
+
+
 
