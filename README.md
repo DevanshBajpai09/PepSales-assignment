@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full-Stack Notification Service
 
-## Getting Started
+This is a full-stack notification service built with a modern web development stack. The project allows users to receive different types of notifications (In-app, Email, SMS) and provides APIs to send and view notifications. The backend uses **PostgreSQL**, **NeonDB**, **RabbitMQ**, and **Twilio**, while the frontend is built using **Next.js**, **TailwindCSS**, **Shadcn UI**, and **React Icons**.
 
-First, run the development server:
+## Features
+
+- **In-app notifications** for user interactions.
+- **Email notifications** using **Resend**.
+- **SMS notifications** using **Twilio API**.
+- API endpoints to **send** and **view** notifications.
+- Responsive and interactive frontend with **Next.js**, **TailwindCSS**, and **Shadcn UI**.
+- Real-time updates with **RabbitMQ** message queue.
+- Fully functional user interface with **React Icons** for icons.
+
+## Technologies Used
+
+### Backend
+- **Node.js**: Server-side environment to handle API requests.
+- **Next.js**: Full-stack React framework used for building both frontend and backend.
+- **Prisma ORM**: For interacting with the PostgreSQL database.
+- **PostgreSQL/NeonDB**: Relational database to store notification data.
+- **RabbitMQ**: Message queue for handling notification events asynchronously.
+- **Twilio**: For sending SMS and email notifications via their respective APIs.
+
+### Frontend
+- **Next.js**: Full-stack React framework.
+- **TailwindCSS**: Utility-first CSS framework for building responsive and styled components.
+- **Shadcn UI**: A design system for building clean and customizable UI components.
+- **React Icons**: For adding icons to UI components.
+
+### APIs
+- **`/api/notifications`**: Endpoint for sending notifications.
+- **`/api/user/[id]/notifications`**: Endpoint for viewing notifications of a specific user.
+
+## Setup
+
+### 1. Clone the Repository
+To get started, clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/DevanshBajpai09/PepSales-assignment.git
+cd Pepsales-assignment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
