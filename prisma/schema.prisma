@@ -12,7 +12,7 @@ model Notification {
   userId    String
   type      String
   message   String
-  email     String
+  
   
   read      Boolean  @default(false)
   createdAt DateTime @default(now())
