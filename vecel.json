@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "postgresql://pepsol_owner:npg_HL32AMJfdFYK@ep-square-block-a4zgqlh6-pooler.us-east-1.aws.neon.tech/pepsol?sslmode=require"
+  }
+}
