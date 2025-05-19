@@ -1,5 +1,6 @@
  
-import { prisma } from "../../../lib/prisma.js";
+
+import { prisma } from "@/lib/prisma.js";
 import { sendNotificationToQueue } from "@/lib/rabbitmqProducer.js"; 
 import { NextResponse } from "next/server";
 
