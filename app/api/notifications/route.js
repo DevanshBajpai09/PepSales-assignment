@@ -1,6 +1,6 @@
  
 import { prisma } from "../../../lib/prisma.js";
-import { sendNotificationToQueue } from "@/lib/rabbitmqProducer"; 
+import { sendNotificationToQueue } from "@/lib/rabbitmqProducer.js"; 
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
